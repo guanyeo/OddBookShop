@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">OddBookstore</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_obsplash">OBSplash</string>
+    <string name="register_link"><u>Don\'t have an account? Click here to register</u></string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_single_author">singleAuthor</string>
+    <string name="title_activity_single_book">singleBook</string>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="peppo.oddbookstore.singleBook"
+    tools:showIn="@layout/activity_single_book">
+
+    <RelativeLayout
+        android:id="@+id/banner_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        >
+        <ImageView
+            android:id="@+id/book_img"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="20dp"
+            />
+        <TextView
+            android:id="@+id/book_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/book_img"
+            android:text="Title"
+            android:textSize="18sp"
+            android:textColor="@color/black_overlay"
+            />
+        <TextView
+            android:id="@+id/book_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USD 69"
+            android:layout_toRightOf="@+id/book_img"
+            android:textColor="@color/colorAccent"
+            android:layout_below="@+id/book_title"
+            />
+
+        <TextView
+            android:id="@+id/book_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/book_img"
+            android:text="By William Snakespear"
+            android:layout_below="@+id/book_price"
+            android:textSize="18sp"
+            android:textColor="@color/black_overlay"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/book_desc"
+        android:layout_below="@+id/banner_section"
+        android:padding="20dp"
+        >
+        <TextView
+            android:id="@+id/desc_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="@color/black_overlay"
+            android:textSize="10sp"
+            />
+        <TextView
+            android:layout_below="@+id/desc_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOREM ISUP"
+            android:textSize="12sp"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

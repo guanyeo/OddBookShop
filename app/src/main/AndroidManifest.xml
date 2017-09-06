@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="peppo.oddbookstore">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_splash_book"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_splash_book"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".volleyCaller"
+        >
+
+        <activity
+            android:name=".main"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="peppo.oddbookstore.main" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OBSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="peppo.oddbookstore.login" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".register"
+            android:label="@string/title_activity_register"
+            android:parentActivityName=".login"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="peppo.oddbookstore.login" />
+
+            <intent-filter>
+                <action android:name="peppo.oddbookstore.register" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".singleAuthor"
+            android:label="@string/title_activity_single_author"
+            android:parentActivityName=".main"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="peppo.oddbookstore.main" />
+
+            <intent-filter>
+                <action android:name="peppo.oddbookstore.singleAuthor" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".singleBook"
+            android:label="@string/title_activity_single_book"
+            android:parentActivityName=".main"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="peppo.oddbookstore.main" />
+
+            <intent-filter>
+                <action android:name="peppo.oddbookstore.singleBook" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".volleyRequest">
+            <intent-filter>
+                <action android:name="peppo.oddbookstore.volleyRequest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
